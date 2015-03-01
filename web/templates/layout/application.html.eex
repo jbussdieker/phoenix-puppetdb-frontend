@@ -9,6 +9,7 @@
 
     <title>PuppetDB Frontend</title>
     <link rel="stylesheet" href="/css/phoenix.css">
+    <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
   </head>
 
   <body>

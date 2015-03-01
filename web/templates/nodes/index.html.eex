@@ -1,6 +1,6 @@
 <h2>Nodes</h2>
 
-<table class="table">
+<table class="table sortable">
   <tr>
     <th>Name</th>
     <th>Catalog</th>
