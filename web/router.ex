@@ -16,6 +16,7 @@ defmodule PuppetdbFrontend.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/nodes", NodesController, only: [:index, :show]
   end
 
   # Other scopes may use custom stacks.
