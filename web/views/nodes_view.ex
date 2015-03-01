@@ -8,4 +8,8 @@ defmodule PuppetdbFrontend.NodesView do
   def nodes(name) do
     PuppetDB.nodes(name).body
   end
+
+  def facts(name) do
+    PuppetDB.facts(name).body
+  end
 end

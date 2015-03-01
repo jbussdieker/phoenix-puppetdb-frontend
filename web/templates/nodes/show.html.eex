@@ -9,3 +9,19 @@ Catalog Timestamp: <b><%= nodes(@id)["catalog_timestamp"] %></b><br>
 Deactivated: <b><%= nodes(@id)["deactivated"] %></b><br>
 Facts Timestamp: <b><%= nodes(@id)["facts_timestamp"] %></b><br>
 Report Timestamp: <b><%= nodes(@id)["report_timestamp"] %></b><br>
+
+<h3>Facts</h3>
+
+<table class="table table-condensed sortable">
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+  </tr>
+
+<%= for fact <- facts(@id) do %>
+  <tr>
+    <td><%= fact["name"] %></td>
+    <td><%= fact["value"] %></td>
+  </tr>
+<% end %>
+</table>
