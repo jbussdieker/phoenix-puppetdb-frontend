@@ -1,0 +1,11 @@
+<h2><%= nodes(@id)["name"] %></h2>
+
+<p>
+  <a class="btn btn-default" href="/nodes">Back</a>
+</p>
+
+Name: <b><%= nodes(@id)["name"] %></b><br>
+Catalog Timestamp: <b><%= nodes(@id)["catalog_timestamp"] %></b><br>
+Deactivated: <b><%= nodes(@id)["deactivated"] %></b><br>
+Facts Timestamp: <b><%= nodes(@id)["facts_timestamp"] %></b><br>
+Report Timestamp: <b><%= nodes(@id)["report_timestamp"] %></b><br>
