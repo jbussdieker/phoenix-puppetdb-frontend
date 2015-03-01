@@ -1,0 +1,21 @@
+<h2>Nodes</h2>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Catalog</th>
+    <th>Deactivated</th>
+    <th>Facts</th>
+    <th>Report</th>
+  </tr>
+
+  <%= for node <- nodes do %>
+  <tr>
+    <td><a href="<%= nodes_path(Endpoint, :show, node["name"]) %>"><%= node["name"] %></a></td>
+    <td><%= node["catalog_timestamp"] %></td>
+    <td><%= node["deactivated"] %></td>
+    <td><%= node["facts_timestamp"] %></td>
+    <td><%= node["report_timestamp"] %></td>
+  </tr>
+  <% end %>
+</table>
